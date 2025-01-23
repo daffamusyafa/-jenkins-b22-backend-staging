@@ -1,0 +1,10 @@
+services:
+  backend:
+    container_name: wayshub-be
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: backend:latest
+    restart: always
+    ports:
+      - "5001:5000"
